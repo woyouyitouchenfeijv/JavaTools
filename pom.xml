@@ -15,5 +15,14 @@
     </properties>
 
 
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml</artifactId>
+            <version>5.2.3</version> <!-- 根据你的需求使用合适的版本 -->
+        </dependency>
+    </dependencies>
+
+
 
 </project>
