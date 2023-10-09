@@ -17,7 +17,7 @@ import java.sql.Statement;
 public class DataSourceFactory {
 
     public static void main(String[] args) throws SQLException {
-        MysqlDataSource dataSource = createDataSource();
+        MysqlDataSource dataSource = createMysqlDataSource();
 
         // 使用数据源建立数据库连接
         try (Connection connection = dataSource.getConnection()) {
@@ -43,7 +43,7 @@ public class DataSourceFactory {
             e.printStackTrace();
         }
     }
-    public static MysqlDataSource createDataSource() throws SQLException {
+    public static MysqlDataSource createMysqlDataSource() throws SQLException {
         MysqlDataSource dataSource = new MysqlDataSource();
 
         // 设置连接属性
